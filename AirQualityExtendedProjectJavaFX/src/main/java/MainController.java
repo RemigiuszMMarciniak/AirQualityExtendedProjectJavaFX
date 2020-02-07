@@ -66,6 +66,21 @@ public class MainController {
     @FXML
     private TextArea mainTextArea;
 
+
+    //new
+
+    @FXML
+    private Pane mainPaneView1;
+
+    @FXML
+    private TextField mainTextFieldObservedCity;
+
+    @FXML
+    private Button mainButtonObserve;
+
+    @FXML
+    private Button mainButtonStopObserving;
+
     @FXML
     void find(ActionEvent event) {
         String cityName = mainTextFieldCityName.getText();
@@ -725,6 +740,23 @@ public class MainController {
 
     }
 
+    //new
+
+    Clock clock = new Clock();
+    TimeKeeper timeKeeper = new TimeKeeper();
+    ChartMaker chartMaker = new ChartMaker();
+    @FXML
+    void observe(ActionEvent event) {
+        clock.registerObserver(timeKeeper);
+        clock.registerObserver(chartMaker);
+        clock.start();
+    }
+
+    @FXML
+    void stopObserving(ActionEvent event) {
+        clock.stop();
+    }
+
     @FXML
     void initialize() {
         assert mainTextFieldCityName != null : "fx:id=\"mainTextFieldCityName\" was not injected: check your FXML file 'main.fxml'.";
@@ -739,6 +771,10 @@ public class MainController {
         assert mainTableView != null : "fx:id=\"mainTableView\" was not injected: check your FXML file 'main.fxml'.";
         assert mainPaneView != null : "fx:id=\"mainPaneView\" was not injected: check your FXML file 'main.fxml'.";
         assert mainTextArea != null : "fx:id=\"mainTextArea\" was not injected: check your FXML file 'main.fxml'.";
+        assert mainPaneView1 != null : "fx:id=\"mainPaneView1\" was not injected: check your FXML file 'main.fxml'.";
+        assert mainTextFieldObservedCity != null : "fx:id=\"mainTextFieldObservedCity\" was not injected: check your FXML file 'main.fxml'.";
+        assert mainButtonObserve != null : "fx:id=\"mainButtonObserve\" was not injected: check your FXML file 'main.fxml'.";
+        assert mainButtonStopObserving != null : "fx:id=\"mainButtonStopObserving\" was not injected: check your FXML file 'main.fxml'.";
 
     }
 }

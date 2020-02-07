@@ -18,7 +18,7 @@ public class MainFX extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
 
-        Scene scene= new Scene(root,700,700);
+        Scene scene= new Scene(root,1200,700);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Air Quality Project");
         primaryStage.show();
