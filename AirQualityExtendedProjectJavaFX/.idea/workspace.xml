@@ -8,9 +8,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,6 +208,7 @@
       <workItem from="1580983190642" duration="248000" />
       <workItem from="1581024554358" duration="2212000" />
       <workItem from="1581068427823" duration="1063000" />
+      <workItem from="1581098705481" duration="3075000" />
     </task>
     <servers />
   </component>
@@ -228,22 +232,22 @@
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
     <state x="773" y="310" width="424" height="484" key="FileChooserDialogImpl/71.27.1849.1053@71.27.1849.1053" timestamp="1581026657838" />
-    <state width="1849" height="286" key="GridCell.Tab.0.bottom" timestamp="1581075307544">
+    <state width="1849" height="418" key="GridCell.Tab.0.bottom" timestamp="1581101790076">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1849" height="286" key="GridCell.Tab.0.bottom/71.27.1849.1053@71.27.1849.1053" timestamp="1581075307544" />
-    <state width="1849" height="286" key="GridCell.Tab.0.center" timestamp="1581075307543">
+    <state width="1849" height="418" key="GridCell.Tab.0.bottom/71.27.1849.1053@71.27.1849.1053" timestamp="1581101790076" />
+    <state width="1849" height="418" key="GridCell.Tab.0.center" timestamp="1581101790076">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1849" height="286" key="GridCell.Tab.0.center/71.27.1849.1053@71.27.1849.1053" timestamp="1581075307543" />
-    <state width="1849" height="286" key="GridCell.Tab.0.left" timestamp="1581075307543">
+    <state width="1849" height="418" key="GridCell.Tab.0.center/71.27.1849.1053@71.27.1849.1053" timestamp="1581101790076" />
+    <state width="1849" height="418" key="GridCell.Tab.0.left" timestamp="1581101790075">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1849" height="286" key="GridCell.Tab.0.left/71.27.1849.1053@71.27.1849.1053" timestamp="1581075307543" />
-    <state width="1849" height="286" key="GridCell.Tab.0.right" timestamp="1581075307543">
+    <state width="1849" height="418" key="GridCell.Tab.0.left/71.27.1849.1053@71.27.1849.1053" timestamp="1581101790075" />
+    <state width="1849" height="418" key="GridCell.Tab.0.right" timestamp="1581101790076">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1849" height="286" key="GridCell.Tab.0.right/71.27.1849.1053@71.27.1849.1053" timestamp="1581075307543" />
+    <state width="1849" height="418" key="GridCell.Tab.0.right/71.27.1849.1053@71.27.1849.1053" timestamp="1581101790076" />
     <state width="1849" height="353" key="GridCell.Tab.1.bottom" timestamp="1580832075662">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
@@ -264,10 +268,10 @@
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
     <state x="478" y="130" width="1024" height="845" key="SettingsEditor/71.27.1849.1053@71.27.1849.1053" timestamp="1581026669707" />
-    <state x="651" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580983193047">
+    <state x="651" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1581098705471">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state x="651" y="380" key="com.intellij.ide.util.TipDialog/71.27.1849.1053@71.27.1849.1053" timestamp="1580983193047" />
+    <state x="651" y="380" key="com.intellij.ide.util.TipDialog/71.27.1849.1053@71.27.1849.1053" timestamp="1581098705471" />
     <state x="659" y="253" key="run.anything.popup" timestamp="1580831831262">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>

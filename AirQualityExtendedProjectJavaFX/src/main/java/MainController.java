@@ -2,6 +2,9 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 import com.google.gson.Gson;
@@ -66,19 +69,32 @@ public class MainController {
     @FXML
     void find(ActionEvent event) {
         String cityName = mainTextFieldCityName.getText();
+        System.out.println(cityName);
         String cityNamePrepared = null;
+        ByteBuffer byteBuffer = null;
         if(!cityName.isEmpty()){
             cityNamePrepared = cityName.substring(0,1).toUpperCase() + cityName.substring(1,cityName.length()).toLowerCase();
+            System.out.println(cityNamePrepared);
         }
-
-
-        System.out.println(cityNamePrepared);
 
         StringBuffer response = new StringBuffer();
         String url = "https://api.openaq.org/v1/measurements?city="+cityNamePrepared+"&parameter[]=pm25&parameter[]=pm10" +
                 "&parameter[]=so2&parameter[]=no2&parameter[]=o3&parameter[]=co";
+        System.out.println(url);
+        String urlFirstPart = "https://api.openaq.org/v1/measurements?city=";
+        String urlSecondPart = "&parameter[]=pm25&parameter[]=pm10" +
+                "&parameter[]=so2&parameter[]=no2&parameter[]=o3&parameter[]=co";
+        String completeURL = null;
+        try {
+            cityNamePrepared = URLEncoder.encode(cityNamePrepared, StandardCharsets.UTF_8.toString());
+            completeURL = urlFirstPart+cityNamePrepared+urlSecondPart;
+            System.out.println(cityNamePrepared);
+            System.out.println(completeURL);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         try{
-            URL object = new URL(url);
+            URL object = new URL(completeURL);
             HttpURLConnection connection = (HttpURLConnection) object.openConnection();
             connection.setRequestMethod("GET");
             int responseCode = connection.getResponseCode();
