@@ -65,11 +65,26 @@
             <Pane fx:id="mainPaneView1" prefHeight="434.0" prefWidth="504.0" />
          </children>
       </VBox>
-      <VBox alignment="CENTER" layoutX="698.0" layoutY="-1.0" prefHeight="175.0" prefWidth="504.0" spacing="20.0">
+      <VBox alignment="CENTER" layoutX="698.0" layoutY="-1.0" prefHeight="148.0" prefWidth="504.0" spacing="10.0">
          <children>
-            <TextField fx:id="mainTextFieldObservedCity" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="367.0" promptText="Enter a  city name that will be observed" />
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="504.0">
+               <children>
+                  <TextField fx:id="mainTextFieldObservedCity" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="12.0" prefWidth="367.0" promptText="Enter a  city name that will be observed" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="504.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="mainTextFieldDateFrom" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="127.0" promptText="Enter date from" />
+                  <TextField fx:id="mainTextFieldTimeFrom" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="127.0" promptText="Enter time from" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="504.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="mainTextFieldDateTo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="127.0" promptText="Enter date to" />
+                  <TextField fx:id="mainTextFieldTimeTo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="127.0" promptText="Enter time to" />
+               </children>
+            </HBox>
             <Button fx:id="mainButtonObserve" mnemonicParsing="false" onAction="#observe" text="Observe" />
-            <Button fx:id="mainButtonStopObserving" mnemonicParsing="false" onAction="#stopObserving" text="Stop observing" />
          </children>
       </VBox>
    </children>
